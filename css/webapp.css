@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'DM Sans', sans-serif;
+}
+
+.header-page {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    position: relative;  
+}
+
+.header-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+}
+.button-icon {
+    color: white;
+}

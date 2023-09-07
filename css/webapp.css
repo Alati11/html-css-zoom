@@ -7,14 +7,13 @@
 html {
 	font-family: 'DM Sans', sans-serif;
 }
+
 body {
     background-color: black;
 }
 
 .header-page {
-    background-color: black;
     height: 10vh;
-   
     position: relative;  
 }
 
@@ -28,31 +27,45 @@ body {
     color: white;
 }
 
-.footer-page {
-    
-     min-height: 80px;
-     background-color: #222222;
-     position: fixed;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     z-index: 99999;
-}
-.section {
+ .main-page {
+    background-color: black;
+    min-height: 90vh;
     display: flex;
 	flex-wrap: wrap;
-    flex-basis: calc(100% / 7) ;
-    
-}
-.section-foto {
-    height: 50vh ;
-    border: 2 solid white;
-    margin-right: 5px;
 }
 
-.col-8 {
-	flex-basis: calc((100% / 12) * 8);
+.container {
+    /* display: flex;
+	flex-wrap: wrap; */
+    padding: 20px 80px;
+    align-items: start;
+    position: relative  ;
+    border: 2 solid white;
+    padding: 20px;
 }
+
+.muted {
+    position:absolute;
+    color: white;
+    bottom: 20px;
+    left: 20;
+    background-color: grey;
+    font-size: 15px;
+    padding: 1px;
+}
+
 img {
-    max-width: 100%;
+    max-width: 40%;
+    
+}
+
+/* Footer*/
+.footer-page {
+    min-height: 80px;
+    background-color: #222222;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
 }

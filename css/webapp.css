@@ -7,10 +7,13 @@
 html {
 	font-family: 'DM Sans', sans-serif;
 }
+body {
+    background-color: black;
+}
 
 .header-page {
     background-color: black;
-    height: 100vh;
+    height: 10vh;
    
     position: relative;  
 }
@@ -35,9 +38,21 @@ html {
      right: 0;
      z-index: 99999;
 }
-
+.section {
+    display: flex;
+	flex-wrap: wrap;
+    flex-basis: calc(100% / 7) ;
+    
+}
 .section-foto {
     height: 50vh ;
     border: 2 solid white;
+    margin-right: 5px;
+}
 
+.col-8 {
+	flex-basis: calc((100% / 12) * 8);
+}
+img {
+    max-width: 100%;
 }

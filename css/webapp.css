@@ -30,18 +30,27 @@ body {
  .main-page {
     background-color: black;
     min-height: 90vh;
-    display: flex;
-	flex-wrap: wrap;
+    
+}
+
+#app {
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	background-color: black;
 }
 
 .container {
-    /* display: flex;
-	flex-wrap: wrap; */
+    display: flex;
+	flex-wrap: wrap; 
     padding: 20px 80px;
     align-items: start;
     position: relative  ;
     border: 2 solid white;
     padding: 20px;
+    
 }
 
 .muted {
@@ -55,17 +64,51 @@ body {
 }
 
 img {
-    max-width: 40%;
-    
+    max-width: 40%;   
 }
 
-/* Footer*/
-.footer-page {
-    min-height: 80px;
-    background-color: #222222;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 99999;
+
+/* Toolbar*/
+
+.app__toolbar {
+	flex-shrink: 0;
+	background-color: #222222;
+	display: flex;
+	justify-content: space-between;
+}
+
+.toolbar,
+.toolbar__item {
+	display: flex;
+}
+
+.toolbar__item {
+	align-items: center;
+	gap: 12px;
+	padding: 16px 16px;
+}
+
+.toolbar__item > i {
+	font-size: 12px;
+}
+
+.button__body {
+	text-align: center;
+	font-size: 12px;
+}
+
+.button__body i {
+	font-size: 32px;
+	display: block;
+	margin-bottom: 8px;
+}
+
+.button.button--colored .button__body > i {
+	color: greenyellow;
+}
+
+.button-end {
+	color: red;
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 0 24px;
 }

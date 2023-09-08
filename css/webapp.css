@@ -28,8 +28,9 @@ body {
 }
 
  .main-page {
-    background-color: black;
-    min-height: 90vh;
+    flex-grow: 1;
+	overflow: auto;
+	padding: 80px;
     
 }
 
@@ -42,30 +43,39 @@ body {
 	background-color: black;
 }
 
+.webcam-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+
 .container {
-    display: flex;
-	flex-wrap: wrap; 
-    padding: 20px 80px;
-    align-items: start;
-    position: relative  ;
-    border: 2 solid white;
-    padding: 20px;
-    
+    width: 200px;
+	padding: 5px;
+	position: relative;
+}
+.webcam__label {
+	position: absolute;
+	padding: 4px;
+	display: block;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	bottom: 0;
+	left: 0;
 }
 
-.muted {
-    position:absolute;
-    color: white;
-    bottom: 20px;
-    left: 20;
-    background-color: grey;
-    font-size: 15px;
-    padding: 1px;
+.webcam img {
+	display: block;
+	aspect-ratio: 16/9;
+	object-fit: cover;
+	width: 100%;
 }
 
-img {
+
+/* img {
     max-width: 40%;   
-}
+} */
 
 
 /* Toolbar*/

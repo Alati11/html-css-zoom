@@ -8,9 +8,9 @@ html {
 	font-family: 'DM Sans', sans-serif;
 }
 
-body {
+/* body {
     background-color: black;
-}
+} */
 
 .header-page {
     height: 10vh;
@@ -31,6 +31,7 @@ body {
     flex-grow: 1;
 	overflow: auto;
 	padding: 80px;
+    flex-basis: calc(100% / 7);
     
 }
 
@@ -46,8 +47,7 @@ body {
 .webcam-wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	
+    justify-content: center;	
 }
 
 .container {
@@ -72,10 +72,14 @@ body {
 	width: 100%;
 }
 
+img {
+	max-width: 100%;
+}
 
-/* img {
-    max-width: 40%;   
-} */
+figure > img {
+	width: 100%;
+	display: block;
+}
 
 
 /* Toolbar*/
